@@ -90,21 +90,30 @@
 // }
 
 // OOP--------------------------------------------------------------------------
-class Student {
-  name: string;
-  age: number;
+// class Student {
+//     name: string;
+//     age: number;
 
-  constructor(name: string, age: number) {
-    this.name = name;
-    this.age = age;
-  }
+//     constructor(name: string, age: number) {
+//         this.name = name;
+//         this.age = age;
+//     }
 
-  greet(): void {
-    console.log(
-      `Hello, my name is ${this.name} and I am ${this.age} years old.`
-    );
+//     greet(): void {
+//         console.log(
+//             `Hello, my name is ${this.name} and I am ${this.age} years old.`
+//         );
+//     }
+// }
+
+// let s1 = new Student('Alice', 30);
+// s1.greet();
+
+// OOP--------------------------------------------------------------------------
+class University {
+  constructor(public name: string, public location: string) {
+    console.log(`University Name: ${this.name}, Location: ${this.location}`);
   }
 }
 
-let s1 = new Student('Alice', 30);
-s1.greet();
+let uni1 = new University('Harvard', 'Cambridge, MA');
