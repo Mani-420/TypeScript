@@ -64,11 +64,47 @@
 
 // Type Aliases-------------------------------------------
 // Type aliases are used to create a new name for a type.
-type arg = string | number | boolean;
+// type arg = string | number | boolean;
 
-function printValue(value: arg): void {
-  console.log(`Value: ${value}`);
+// function printValue(value: arg): void {
+//   console.log(`Value: ${value}`);
+// }
+// printValue('Hello');
+// printValue(42);
+// printValue(true);
+
+// Types of Intersection-------------------------------------------
+// type User = {
+//     name: string;
+//   email: string;
+// };
+
+// type Admin = User & {
+//     role: string;
+// };
+
+// function createAdmin(admin: Admin): void {
+//     console.log(
+//         `Admin Created: ${admin.name}, Email: ${admin.email}, Role: ${admin.role}`
+//     );
+// }
+
+// OOP--------------------------------------------------------------------------
+class Student {
+  name: string;
+  age: number;
+
+  constructor(name: string, age: number) {
+    this.name = name;
+    this.age = age;
+  }
+
+  greet(): void {
+    console.log(
+      `Hello, my name is ${this.name} and I am ${this.age} years old.`
+    );
+  }
 }
-printValue('Hello');
-printValue(42);
-printValue(true);
+
+let s1 = new Student('Alice', 30);
+s1.greet();
