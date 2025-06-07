@@ -28,3 +28,6 @@
 // }       // Void Type. Used for functions that do not return a value.
 // let data: null = null; // Null Type. Represents no value.
 // let notDefined: undefined = undefined; // Undefined Type. Represents a variable that has not been assigned a value.
+// function xyz(): never {
+//     console.log("This function never returns a value.");
+// } // Never Type. Used for functions that never return, like throwing an error or infinite loops.
