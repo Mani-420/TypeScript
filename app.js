@@ -31,3 +31,25 @@
 // function xyz(): never {
 //     console.log("This function never returns a value.");
 // } // Never Type. Used for functions that never return, like throwing an error or infinite loops.
+// Interface-------------------------------------------
+// interface User {
+//   name: string;
+//   email: string;
+//   password: string;
+//   age?: number;
+// }
+// interface Admin extends User {
+//   role: string;
+// }
+// function createUser(obj: Admin): void {
+//   console.log(
+//     `User Created: ${obj.name}, Email: ${obj.email}, IsAdmin: ${obj.role}`
+//   );
+// }
+// createUser({
+//   name: 'John Doe',
+//   email: 'john@gmail.com',
+//   password: 'password123',
+//   age: 30,
+//   role: 'admin'
+// });
