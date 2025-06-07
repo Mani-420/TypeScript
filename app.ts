@@ -61,3 +61,14 @@
 //   age: 30,
 //   role: 'admin'
 // });
+
+// Type Aliases-------------------------------------------
+// Type aliases are used to create a new name for a type.
+type arg = string | number | boolean;
+
+function printValue(value: arg): void {
+  console.log(`Value: ${value}`);
+}
+printValue('Hello');
+printValue(42);
+printValue(true);
