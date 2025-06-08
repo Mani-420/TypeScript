@@ -92,13 +92,20 @@
 // let s1 = new Student('Alice', 30);
 // s1.greet();
 // OOP--------------------------------------------------------------------------
-class University {
-    name;
-    location;
-    constructor(name, location) {
-        this.name = name;
-        this.location = location;
-        console.log(`University Name: ${this.name}, Location: ${this.location}`);
-    }
-}
-let uni1 = new University('Harvard', 'Cambridge, MA');
+// class University {
+//   constructor(public name: string, public location: string) {
+//     console.log(`University Name: ${this.name}, Location: ${this.location}`);
+//   }
+// }
+// let uni1 = new University('Harvard', 'Cambridge, MA');
+// Access Specifiers--------------------------------------------------------------------------
+// class Bottle {
+//   constructor(private brand: string, private price: number) {
+//     console.log(`Brand: ${this.brand}, Price: ${this.price}`);
+//   }
+//   getBrand(): string {
+//     return this.brand;
+//   }
+// }
+// let b1 = new Bottle('Coca Next', 100);
+// console.log(b1.getBrand()); // Accessing private property through a public method
