@@ -120,8 +120,8 @@
 
 // Access Specifiers--------------------------------------------------------------------------
 // class Bottle {
-//   constructor(private brand: string, private price: number) {
-//     console.log(`Brand: ${this.brand}, Price: ${this.price}`);
+  //   constructor(private brand: string, private price: number) {
+    //     console.log(`Brand: ${this.brand}, Price: ${this.price}`);
 //   }
 
 //   getBrand(): string {
@@ -131,3 +131,18 @@
 
 // let b1 = new Bottle('Coca Next', 100);
 // console.log(b1.getBrand()); // Accessing private property through a public method
+
+// ReadOnly--------------------------------------------------------------------------
+// Readonly properties can only be assigned during initialization or in the constructor. by using the `readonly` keyword.
+// Their values cannot be changed after that.
+
+// Getters and Setters--------------------------------------------------------------------------
+// Getters and setters allow you to define methods that can be used to get or set the value of a property.
+
+// Static Members--------------------------------------------------------------------------
+// Static members belong to the class itself rather than to instances of the class.
+// They can be accessed without creating an instance of the class.
+
+// Abstract Classes--------------------------------------------------------------------------
+// Abstract classes cannot be instantiated directly and are meant to be extended by other classes.
+
