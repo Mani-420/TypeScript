@@ -120,8 +120,8 @@
 
 // Access Specifiers--------------------------------------------------------------------------
 // class Bottle {
-  //   constructor(private brand: string, private price: number) {
-    //     console.log(`Brand: ${this.brand}, Price: ${this.price}`);
+//   constructor(private brand: string, private price: number) {
+//     console.log(`Brand: ${this.brand}, Price: ${this.price}`);
 //   }
 
 //   getBrand(): string {
@@ -146,3 +146,12 @@
 // Abstract Classes--------------------------------------------------------------------------
 // Abstract classes cannot be instantiated directly and are meant to be extended by other classes.
 
+// Functions--------------------------------------------------------------------------
+//Functions in TypeScript can be defined with types for parameters and return values.
+// They are used to encapsulate reusable logic and can be either named or anonymous.
+// function add(a: number, b: number): number {
+//     return a + b;
+// }
+// function greet(name: string): string {
+//     return `Hello, ${name}!`;
+// }
