@@ -155,3 +155,11 @@
 // function greet(name: string): string {
 //     return `Hello, ${name}!`;
 // }
+
+function mnop(name: string, age: number, cb: (arg: string) => void) {
+  cb(`Name: ${name}, Age: ${age}`);
+}
+
+mnop('Mithu', 30, (arg: string) => {
+  console.log(`Callback called with argument: ${arg}`);
+});

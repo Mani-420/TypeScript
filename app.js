@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 // Array-------------------------------------------
 // Arrays in TypeScript can be defined using the type followed by square brackets.
 // let arr: number[] = [1, 2, 3, 4, 5];
@@ -128,3 +128,9 @@
 // function greet(name: string): string {
 //     return `Hello, ${name}!`;
 // }
+function mnop(name, age, cb) {
+  cb(`Name: ${name}, Age: ${age}`);
+}
+mnop('Mithu', 30, (arg) => {
+  console.log(`Callback called with argument: ${arg}`);
+});
