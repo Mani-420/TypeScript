@@ -194,3 +194,19 @@
 // console.log(anyValue<boolean>(true));
 // console.log(anyValue<Array<number>>([1, 2, 3, 4, 5]));
 
+// Type Assertions--------------------------------------------------------------------------
+// Type assertions allow you to tell the TypeScript compiler to treat a value as a specific type.
+// let someValue: any = 'Hello, TypeScript!';
+// let strLength: number = (someValue as string).length;
+// console.log(`Length of string: ${strLength}`);
+
+// Type Casting--------------------------------------------------------------------------
+// Type casting is similar to type assertions but is used to convert a value from one type to another.
+// let num: any = '123';
+// let numValue: number = Number(num);
+// console.log(`Converted number: ${numValue}`);
+
+// Non-Null Assertion Operator--------------------------------------------------------------------------
+// The non-null assertion operator (`!`) is used to assert that a value is not null or undefined.
+// let someValue: string | null = 'Hello, TypeScript!';
+// let strLength: number = someValue!.length;
