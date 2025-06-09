@@ -179,3 +179,18 @@
 // let arr3: number[] = [1, 2, 3];
 // let arr4: number[] = [...arr3, 4, 5];
 // console.log(`Combined Array: ${arr4}`);
+
+// Generics--------------------------------------------------------------------------
+// Generics allow you to create reusable components that can work with any data type.
+// They are defined using angle brackets and can be used with functions, classes, and interfaces.
+
+// Generics functions--------------------------------------------------------------------------
+// function anyValue<T>(value: T): T {
+//     return value;
+// }
+
+// console.log(anyValue<string>('Hello, Generics!'));
+// console.log(anyValue<number>(42));
+// console.log(anyValue<boolean>(true));
+// console.log(anyValue<Array<number>>([1, 2, 3, 4, 5]));
+
