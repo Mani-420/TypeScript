@@ -156,10 +156,26 @@
 //     return `Hello, ${name}!`;
 // }
 
-function mnop(name: string, age: number, cb: (arg: string) => void) {
-  cb(`Name: ${name}, Age: ${age}`);
-}
+// function mnop(name: string, age: number, cb: (arg: string) => void) {
+//   cb(`Name: ${name}, Age: ${age}`);
+// }
 
-mnop('Mithu', 30, (arg: string) => {
-  console.log(`Callback called with argument: ${arg}`);
-});
+// mnop('Mithu', 30, (arg: string) => {
+//   console.log(`Callback called with argument: ${arg}`);
+// });
+
+// Rest and Spread--------------------------------------------------------------------------
+// The rest operator allows you to represent an indefinite number of arguments as an array.
+
+// function sum(...args: number[]): void {
+//   console.log(`Arguments: ${args}`);
+// }
+
+// sum(1, 2, 3, 4, 5); // Returns 15
+
+// Spread operator can be used to combine arrays or objects.---------
+// The spread operator allows you to expand an array or object into individual elements.
+
+// let arr3: number[] = [1, 2, 3];
+// let arr4: number[] = [...arr3, 4, 5];
+// console.log(`Combined Array: ${arr4}`);
