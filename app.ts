@@ -210,3 +210,16 @@
 // The non-null assertion operator (`!`) is used to assert that a value is not null or undefined.
 // let someValue: string | null = 'Hello, TypeScript!';
 // let strLength: number = someValue!.length;
+
+// Type Guards--------------------------------------------------------------------------
+// Type guards are used to narrow down the type of a variable within a conditional block.
+
+function jkl(arg: string | number): void {
+  if (typeof arg === 'string') {
+    console.log(arg.toUpperCase());
+  } else if (typeof arg === 'number') {
+    console.log(`Number value: ${arg}`);
+  } else {
+    console.log('Unknown type');
+  }
+}
